@@ -1,0 +1,6 @@
+{
+  "item.power_mod.solar_pane": "Solar Pane",
+  "itemGroup.tabpower_mod": "Power Mod",
+  "block.power_mod.solar_panel": "Solar Panel",
+  "block.power_mod.energy_cell_basic": "Energy Cell Basic"
+}

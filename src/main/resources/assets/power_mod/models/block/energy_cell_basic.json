@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power_mod:blocks/cellout",
+    "up": "power_mod:blocks/cellin",
+    "north": "power_mod:blocks/cellout",
+    "east": "power_mod:blocks/cellout",
+    "south": "power_mod:blocks/cellout",
+    "west": "power_mod:blocks/cellout",
+    "particle": "power_mod:blocks/cellout"
+  }
+}

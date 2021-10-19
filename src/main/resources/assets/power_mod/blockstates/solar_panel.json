@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "power_mod:block/solar_panel"
+    }
+  }
+}

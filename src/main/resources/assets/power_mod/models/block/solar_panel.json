@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power_mod:blocks/cobblelevel",
+    "up": "power_mod:blocks/solarpaneltop",
+    "north": "power_mod:blocks/cobblelevel",
+    "east": "power_mod:blocks/cobblelevel",
+    "south": "power_mod:blocks/cobblelevel",
+    "west": "power_mod:blocks/cobblelevel",
+    "particle": "power_mod:blocks/cobblelevel"
+  }
+}

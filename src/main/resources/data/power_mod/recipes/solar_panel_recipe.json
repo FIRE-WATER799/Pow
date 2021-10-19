@@ -1,0 +1,42 @@
+{
+  "group": "power_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "power_mod:solar_pane"
+    },
+    "1": {
+      "item": "power_mod:solar_pane"
+    },
+    "2": {
+      "item": "power_mod:solar_pane"
+    },
+    "3": {
+      "item": "minecraft:cobblestone"
+    },
+    "4": {
+      "item": "minecraft:cobblestone"
+    },
+    "5": {
+      "item": "minecraft:cobblestone"
+    },
+    "6": {
+      "item": "minecraft:cobblestone"
+    },
+    "7": {
+      "item": "minecraft:cobblestone"
+    },
+    "8": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "power_mod:solar_panel",
+    "count": 1
+  }
+}
