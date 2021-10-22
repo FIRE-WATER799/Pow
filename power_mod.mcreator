@@ -139,12 +139,68 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "basic_comp_recipie"
+    },
+    {
+      "name": "EnergyMeterRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_meter_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyMeter",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_meter"
+    },
+    {
+      "name": "EnergyMeterRecipie",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_meter_recipie"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.power_mod.energy_meter": "Energy Meter",
       "item.power_mod.solar_pane": "Solar Pane",
       "itemGroup.tabpower_mod": "Power Mod",
       "block.power_mod.solar_panel": "Basic Solar Panel",
