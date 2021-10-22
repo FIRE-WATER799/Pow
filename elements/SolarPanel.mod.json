@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Solar Panel",
+    "name": "Basic Solar Panel",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

@@ -8,35 +8,35 @@
   ],
   "key": {
     "0": {
-      "item": "power_mod:solar_pane"
+      "item": "minecraft:cobblestone"
     },
     "1": {
-      "item": "power_mod:solar_pane"
+      "item": "minecraft:redstone"
     },
     "2": {
-      "item": "power_mod:solar_pane"
+      "item": "minecraft:cobblestone"
     },
     "3": {
-      "item": "power_mod:basic_componet"
+      "item": "minecraft:cobblestone"
     },
     "4": {
       "item": "power_mod:basic_componet"
     },
     "5": {
-      "item": "power_mod:basic_componet"
+      "item": "minecraft:cobblestone"
     },
     "6": {
-      "item": "power_mod:basic_componet"
+      "item": "minecraft:cobblestone"
     },
     "7": {
       "item": "power_mod:basic_componet"
     },
     "8": {
-      "item": "power_mod:basic_componet"
+      "item": "minecraft:cobblestone"
     }
   },
   "result": {
-    "item": "power_mod:solar_panel",
+    "item": "power_mod:energy_cell_basic",
     "count": 1
   }
 }

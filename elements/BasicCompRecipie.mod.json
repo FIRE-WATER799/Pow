@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.STONE#0"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.COBBLESTONE"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SolarPanel"
+      "value": "CUSTOM:BasicComponet"
     },
-    "name": "solar_panel_recipe",
+    "name": "basic_comp_recipie",
     "namespace": "mod"
   }
 }

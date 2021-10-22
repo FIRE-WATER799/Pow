@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Items.REDSTONE"
       },
       {
-        "value": "CUSTOM:SolarPane"
+        "value": "Blocks.COBBLESTONE"
       },
       {
-        "value": "CUSTOM:BasicComponet"
-      },
-      {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.COBBLESTONE"
       },
       {
         "value": "CUSTOM:BasicComponet"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.COBBLESTONE"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
       },
       {
         "value": "CUSTOM:BasicComponet"
       },
       {
-        "value": "CUSTOM:BasicComponet"
+        "value": "Blocks.COBBLESTONE"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SolarPanel"
+      "value": "CUSTOM:EnergyCellBasic"
     },
-    "name": "solar_panel_recipe",
+    "name": "energy_cell_basic_recipe",
     "namespace": "mod"
   }
 }

@@ -112,6 +112,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "energy_cell_basic"
+    },
+    {
+      "name": "BasicComponet",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basic_componet"
+    },
+    {
+      "name": "EnergyCellBasicRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_cell_basic_recipe"
+    },
+    {
+      "name": "BasicCompRecipie",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basic_comp_recipie"
     }
   ],
   "variable_elements": [],
@@ -120,7 +147,8 @@
     "en_us": {
       "item.power_mod.solar_pane": "Solar Pane",
       "itemGroup.tabpower_mod": "Power Mod",
-      "block.power_mod.solar_panel": "Solar Panel",
+      "block.power_mod.solar_panel": "Basic Solar Panel",
+      "item.power_mod.basic_componet": "Basic Componet",
       "block.power_mod.energy_cell_basic": "Energy Cell Basic"
     }
   },
@@ -146,5 +174,5 @@
     "modElementsPackage": "net.mcreator.powermod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100235315
+  "mcreatorVersion": 202100236710
 }
