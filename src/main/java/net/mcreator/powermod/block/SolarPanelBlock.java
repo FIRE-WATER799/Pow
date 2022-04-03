@@ -26,16 +26,19 @@ import net.mcreator.powermod.procedures.SolarPanelUpdateTickProcedure;
 import net.mcreator.powermod.itemgroup.PowerModItemGroup;
 import net.mcreator.powermod.PowerModModElements;
 
+import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
 @PowerModModElements.ModElement.Tag
 public class SolarPanelBlock extends PowerModModElements.ModElement {
 	@ObjectHolder("power_mod:solar_panel")
 	public static final Block block = null;
+
 	public SolarPanelBlock(PowerModModElements instance) {
 		super(instance, 2);
 	}
@@ -51,6 +54,7 @@ public class SolarPanelBlock extends PowerModModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
@@ -82,7 +86,7 @@ public class SolarPanelBlock extends PowerModModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+			world.getPendingBlockTicks().scheduleTick(pos, this, 1);
 		}
 
 		@Override
@@ -91,15 +95,12 @@ public class SolarPanelBlock extends PowerModModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				SolarPanelUpdateTickProcedure.executeProcedure($_dependencies);
-			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+
+			SolarPanelUpdateTickProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			world.getPendingBlockTicks().scheduleTick(pos, this, 1);
 		}
 	}
 }

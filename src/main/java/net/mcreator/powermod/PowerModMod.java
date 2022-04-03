@@ -46,6 +46,7 @@ public class PowerModMod {
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("power_mod", "power_mod"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public PowerModModElements elements;
+
 	public PowerModMod() {
 		elements = new PowerModModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -86,8 +87,10 @@ public class PowerModMod {
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
 		elements.registerSounds(event);
 	}
+
 	private static class PowerModModFMLBusEvents {
 		private final PowerModMod parent;
+
 		PowerModModFMLBusEvents(PowerModMod parent) {
 			this.parent = parent;
 		}

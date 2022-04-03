@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "SolarPanelUpdateTick",
@@ -7,7 +6,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "solar_panel_update_tick",
       "metadata": {
         "dependencies": [
@@ -36,7 +34,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "solar_panel"
     },
     {
@@ -45,7 +42,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "solar_pane"
     },
     {
@@ -54,7 +50,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "solar_panel_recipe"
     },
     {
@@ -63,7 +58,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "solar_pane_recipe"
     },
     {
@@ -72,7 +66,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "power_mod"
     },
     {
@@ -81,7 +74,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_cell_basic_update_tick",
       "metadata": {
         "dependencies": [
@@ -110,7 +102,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_cell_basic"
     },
     {
@@ -119,7 +110,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "basic_componet"
     },
     {
@@ -128,7 +118,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_cell_basic_recipe"
     },
     {
@@ -137,7 +126,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "basic_comp_recipie"
     },
     {
@@ -146,7 +134,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_meter_right_clicked_on_block",
       "metadata": {
         "dependencies": [
@@ -183,7 +170,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_meter"
     },
     {
@@ -192,14 +178,98 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_meter_recipie"
+    },
+    {
+      "name": "CoalGenGui",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_gen_gui"
+    },
+    {
+      "name": "BasicCoalGenUpdateTick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_coal_gen_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrankGen",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crank_gen"
+    },
+    {
+      "name": "CrankGUI",
+      "type": "gui",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crank_gui"
+    },
+    {
+      "name": "BasicCrankGenProcedure",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_crank_gen_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.power_mod.crank_gen": "Crank Genarator",
       "item.power_mod.energy_meter": "Energy Meter",
       "item.power_mod.solar_pane": "Solar Pane",
       "itemGroup.tabpower_mod": "Power Mod",
@@ -230,5 +300,5 @@
     "modElementsPackage": "net.mcreator.powermod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100236710
+  "mcreatorVersion": 202100354000
 }

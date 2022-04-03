@@ -1,4 +1,5 @@
 {
+  "block.power_mod.crank_gen": "Crank Genarator",
   "item.power_mod.energy_meter": "Energy Meter",
   "item.power_mod.solar_pane": "Solar Pane",
   "itemGroup.tabpower_mod": "Power Mod",

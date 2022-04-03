@@ -31,5 +31,6 @@ public class PowerModItemGroup extends PowerModModElements.ModElement {
 			}
 		};
 	}
+
 	public static ItemGroup tab;
 }

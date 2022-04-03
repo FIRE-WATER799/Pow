@@ -15,6 +15,7 @@ import net.mcreator.powermod.PowerModModElements;
 public class SolarPaneItem extends PowerModModElements.ModElement {
 	@ObjectHolder("power_mod:solar_pane")
 	public static final Item block = null;
+
 	public SolarPaneItem(PowerModModElements instance) {
 		super(instance, 3);
 	}
@@ -23,6 +24,7 @@ public class SolarPaneItem extends PowerModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(PowerModItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));

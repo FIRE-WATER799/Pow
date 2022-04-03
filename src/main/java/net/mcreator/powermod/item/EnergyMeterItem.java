@@ -18,13 +18,16 @@ import net.mcreator.powermod.procedures.EnergyMeterRightClickedOnBlockProcedure;
 import net.mcreator.powermod.itemgroup.PowerModItemGroup;
 import net.mcreator.powermod.PowerModModElements;
 
+import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @PowerModModElements.ModElement.Tag
 public class EnergyMeterItem extends PowerModModElements.ModElement {
 	@ObjectHolder("power_mod:energy_meter")
 	public static final Item block = null;
+
 	public EnergyMeterItem(PowerModModElements instance) {
 		super(instance, 11);
 	}
@@ -33,6 +36,7 @@ public class EnergyMeterItem extends PowerModModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(PowerModItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
@@ -66,16 +70,12 @@ public class EnergyMeterItem extends PowerModModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			ItemStack itemstack = context.getItem();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("direction", direction);
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				EnergyMeterRightClickedOnBlockProcedure.executeProcedure($_dependencies);
-			}
+
+			EnergyMeterRightClickedOnBlockProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("direction", direction),
+							new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
 	}
